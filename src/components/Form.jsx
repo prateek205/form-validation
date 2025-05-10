@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/form.css";
-import { useForm } from "../context/formContext";
+import { useForm } from "../context/authContext";
 
 const Form = () => {
   const { error, successMsg, msgType, handleChange, handleSubmit, formData } =

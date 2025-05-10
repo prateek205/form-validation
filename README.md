@@ -1,12 +1,79 @@
-# React + Vite
+# 📜 Sign-Up Form-validation using Context
+This is Simple login and logout form with some form-validation using ContextAPI which is manage all globally.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
+- Create the New User(Sign-up).
+- Login with existing credentials.
+- Shows the success or error messages.
+- Shows all fields are mandatory error message if user submit empty form.
+- Store the user data at local storage.
+- Context handle all signup logic.
 
-Currently, two official plugins are available:
+## 📽️ Live Demo
+You can see Demo Here: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Getting Start
+#### 1. Clone Repository.
+```
+git clone https://github.com/prateek205/form-validation.git
+cd form-validation
+```
+#### 2. Install Dependencies
+```
+npm install
+```
+#### 3. Start the Development Server
+```
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## 🧠 How it Works
+#### 1. authContext.jsx
+```
+<FormContext.Provider value={{ error, successMsg, msgType, handleChange, handleSubmit, formData }}>
+{children}
+</FormContext.Provider>
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## SignUp 
+- Validate the Form.
+- Save to LocalStorage.
+- Show the Success Message.
+
+## 📂 Local Storage
+```
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "123456"
+}
+```
+
+## ✅ ToDo / Improvement
+- Encrypt the Password(Do not store plain Password).
+- Store at Backend Database Like MongoDB.
+- Protect Routes(Private page).
+
+## 📂 Folder structure
+```
+├── Sign-Up Form-Validation
+├── public 
+├── src/
+│   ├── Assets
+│   ├── Components/
+│   │   └── Form.jsx
+│   ├── Context/
+│   │   └── authContext.jsx
+│   ├── Style/
+│   │   └── form.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── Main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
