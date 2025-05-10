@@ -1,0 +1,110 @@
+.formContainer {
+  /* border: 2px solid black; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background-image: url("/image/gettyimages-1370880112-640x640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.formHeading{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.form{
+    /* border: 2px solid black; */
+    width: 30%;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+.nameInp{
+    /* border: 2px solid black; */
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.nameInp label{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.nameInp input{
+    width: 100%;
+    padding: 8px 6px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+.nameInp .inpErr{
+    font-size: 15px;
+    color: rgb(255, 37, 37);
+}
+.subBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subBtn button{
+    font-size: 18px;
+    padding: 8px 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.subBtn button:hover{
+    color: white;
+}
+.successMsg{
+    text-align: center;
+}
+
+@media only screen and (max-width:1024px){
+    .formHeading{
+        margin-bottom: 10px;
+    }
+    .form{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .formHeading{
+        margin-bottom: 10px;
+    }
+    .form{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .formHeading{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .form{
+        width: 80%;
+    }
+}
